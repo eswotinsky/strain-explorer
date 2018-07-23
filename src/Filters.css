@@ -1,0 +1,11 @@
+.filters {
+  position: fixed;
+  padding: 2%;
+  background-color: lime;
+  height: 100%;
+}
+
+.checkbox-group {
+  display: block;
+  text-align: left;
+}
