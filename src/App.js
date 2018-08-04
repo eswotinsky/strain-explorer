@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Filters from './Filters';
 import StrainList from './StrainList';
-import logo from './logo.svg';
 import './App.css';
+import './bootstrap.min.css'
 
 class App extends Component {
 
@@ -26,7 +26,32 @@ class App extends Component {
           rating: 4
         },
         strain4: {
-          name: "Jessica",
+          name: "strain4",
+          type: "Sativa",
+          rating: 6
+        },
+        strain5: {
+          name: "strain5",
+          type: "Sativa",
+          rating: 6
+        },
+        strain6: {
+          name: "strain6",
+          type: "Sativa",
+          rating: 6
+        },
+        strain7: {
+          name: "strain7",
+          type: "Sativa",
+          rating: 6
+        },
+        strain8: {
+          name: "strain8",
+          type: "Sativa",
+          rating: 6
+        },
+        strain9: {
+          name: "strain9",
           type: "Sativa",
           rating: 6
         }
@@ -36,20 +61,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="container">
 
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Strain Lookup</h1>
-        </header>
-
-        <div>
-          <Filters/>
-        </div>
-
-        <p className="App-intro">
-          Cards go below.
-        </p>
+        <h1>Header placeholder</h1>
+        <Filters/>
 
         <StrainList
           strainList={this.state.strainList}

@@ -1,4 +1,4 @@
 .strain-list {
-  position: relative;
-  margin-left: 200px;
+  margin-left: 250px;
+  width: calc(-274px + 100%);
 }

@@ -2,10 +2,13 @@
   position: fixed;
   padding: 2%;
   background-color: lime;
-  height: 100%;
 }
 
 .checkbox-group {
   display: block;
   text-align: left;
+}
+
+label {
+  margin-left: 10px;
 }
