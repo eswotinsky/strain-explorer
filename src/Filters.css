@@ -1,10 +1,11 @@
-.filters {
+div.filters {
+  border: 1px solid lightgray;
   position: fixed;
   padding: 2%;
-  background-color: lime;
+  margin-top: -1px;
 }
 
-.checkbox-group {
+div.checkbox-group {
   display: block;
   text-align: left;
 }

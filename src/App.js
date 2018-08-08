@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import Header from './Header';
 import Filters from './Filters';
 import StrainList from './StrainList';
 import './App.css';
-import './bootstrap.min.css'
+import './bootstrap.min.css';
 
 class App extends Component {
 
@@ -61,14 +62,21 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="wrapper">
+        <Header />
+        <div className="container">
 
-        <h1>Header placeholder</h1>
-        <Filters/>
 
-        <StrainList
-          strainList={this.state.strainList}
-        />
+          <div className="main-content">
+
+            <Filters />
+            <StrainList
+              strainList={this.state.strainList}
+            />
+
+          </div>
+
+        </div>
 
       </div>
     );
