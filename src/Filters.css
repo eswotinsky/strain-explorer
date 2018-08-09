@@ -5,6 +5,18 @@ div.filters {
   margin-top: -1px;
 }
 
+div.filters h2, div.filters h3 {
+  color: #111;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+
+div.filters h3 {
+  font-size: 1em;
+}
+
 div.checkbox-group {
   display: block;
   text-align: left;
