@@ -1,7 +1,7 @@
 import React from 'react';
 import StrainCard from './StrainCard';
 import PropTypes from 'prop-types';
-import './StrainList.css';
+import '../css/StrainList.css';
 
 function StrainList(props) {
 
@@ -16,6 +16,7 @@ function StrainList(props) {
             name = {strainCard.name}
             seedCompany = {strainCard.seedCompany.name}
             image = {strainCard.image}
+            ucpc = {strainCard.ucpc}
             key = {strainId}
           />;
         })}

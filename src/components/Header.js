@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './Header.css';
-import './bootstrap.min.css';
+import '../css/Header.css';
+import '../css/bootstrap.min.css';
 
 class Header extends Component {
   render() {

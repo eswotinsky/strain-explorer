@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './StrainCard.css'
+import '../css/StrainCard.css'
 
 function StrainCard(props) {
     return (
@@ -15,7 +15,8 @@ function StrainCard(props) {
 StrainCard.propTypes = {
   name: PropTypes.string.isRequired,
   seedCompany: PropTypes.string.isRequired,
-  image: PropTypes.string
+  image: PropTypes.string,
+  ucpc: PropTypes.string.isRequired
 };
 
 export default StrainCard;

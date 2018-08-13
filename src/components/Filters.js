@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Filters.css'
+import '../css/Filters.css'
 
 class Filters extends Component {
   render() {

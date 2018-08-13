@@ -3,8 +3,8 @@ import axios from 'axios';
 import Header from './Header';
 import Filters from './Filters';
 import StrainList from './StrainList';
-import './App.css';
-import './bootstrap.min.css';
+import '../css/App.css';
+import '../css/bootstrap.min.css';
 
 class App extends Component {
 
