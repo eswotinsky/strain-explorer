@@ -13,6 +13,7 @@ class App extends Component {
     this.state = {
       strainList: {},
     };
+    this.handleFilterSubmission = this.handleFilterSubmission.bind(this);
   }
 
   componentDidMount() {
@@ -20,6 +21,11 @@ class App extends Component {
       .then(response => this.setState({strainList: response.data.data}))
   }
 //      .then(response => console.log(response.data.data))
+
+  handleFilterSubmission(searchQuery) {
+    axios.get(`https://www.cannabisreports.com/api/v1.0/strains/search/${searchQuery}`)
+      .then(response => this.setState({strainList: response.data.data}))
+  }
 
   render() {
     return (
@@ -29,7 +35,7 @@ class App extends Component {
 
           <div className="main-content">
 
-            <Filters />
+            <Filters onFilterSubmission={this.handleFilterSubmission}/>
             <StrainList
               strainList={this.state.strainList}
             />

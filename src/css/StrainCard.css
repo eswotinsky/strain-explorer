@@ -3,6 +3,7 @@ div.strain-card {
   float: left;
   margin: 0 6px 12px 6px;
   max-width: 168px;
+  overflow-x: hidden;
 }
 
 div.strain-card h5 {
@@ -11,6 +12,10 @@ div.strain-card h5 {
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: bold;
   line-height: 1;
+}
+
+div.strain-card p {
+  font-size: smaller;
 }
 
 div.strain-card img {
