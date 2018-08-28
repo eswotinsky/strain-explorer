@@ -1,4 +1,5 @@
 .strain-list {
   margin-left: 275px;
   width: calc(-299px + 100%);
+  min-height: 100vh;
 }

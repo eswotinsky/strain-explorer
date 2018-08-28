@@ -1,14 +1,21 @@
 import React from 'react';
 import StrainCard from './StrainCard';
+import Loading from './Loading';
 import PropTypes from 'prop-types';
 import '../css/StrainList.css';
 
 function StrainList(props) {
 
+    if (props.isLoading) {
+      return (
+        <div className="strain-list">
+          <Loading />
+        </div>
+      )
+    }
+
     return (
       <div className="strain-list">
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
         {Object.keys(props.strainList).map(function(strainId) {
           var strainCard = props.strainList[strainId];
@@ -27,7 +34,8 @@ function StrainList(props) {
 }
 
 StrainList.propTypes = {
-  strainList: PropTypes.object.isRequired
+  strainList: PropTypes.object.isRequired,
+  isLoading: PropTypes.bool.isRequired
 };
 
 export default StrainList;
