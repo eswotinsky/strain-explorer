@@ -7,9 +7,6 @@ div.wrapper {
 
 div.container {
   text-align: center;
-}
-
-div.main-content {
   flex: 1 1 auto;
   overflow-y: auto;
   position: relative;
