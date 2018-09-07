@@ -1,0 +1,14 @@
+div.strain-details {
+  min-height: 100vh;
+  margin-top: 1%;
+}
+
+div.strain-details img {
+  float: left;
+}
+
+div.strain-details h1, h4 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
