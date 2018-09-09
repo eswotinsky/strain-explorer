@@ -34,7 +34,7 @@ function StrainList(props) {
 }
 
 StrainList.propTypes = {
-  strainList: PropTypes.object.isRequired,
+  strainList: PropTypes.array.isRequired,
   isLoading: PropTypes.bool.isRequired
 };
 

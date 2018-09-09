@@ -7,7 +7,7 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      strainList: {},
+      strainList: [],
       isLoading: false
     };
     this.handleFilterSubmission = this.handleFilterSubmission.bind(this);
