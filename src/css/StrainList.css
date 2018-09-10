@@ -1,5 +1,9 @@
-.strain-list {
+div.strain-list {
   margin-left: 275px;
   width: calc(-299px + 100%);
   min-height: 100vh;
+}
+
+div.strain-list h2 {
+  padding-top: 10%;
 }

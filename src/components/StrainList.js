@@ -14,6 +14,14 @@ function StrainList(props) {
       )
     }
 
+    if (props.strainList.length === 0) {
+      return (
+        <div className="strain-list">
+          <h2>No results found. Try refining your search.</h2>
+        </div>
+      )
+    }
+
     return (
       <div className="strain-list">
 
