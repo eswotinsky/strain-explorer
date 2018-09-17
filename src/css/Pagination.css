@@ -1,0 +1,24 @@
+div.pagination {
+  margin-left: 275px;
+  width: calc(-299px + 100%);
+}
+
+div.pagination a {
+  cursor: pointer;
+}
+
+div.pagination ul {
+  list-style-type: none;
+  margin: auto;
+}
+
+div.pagination li {
+  border: 1px solid lightgray;
+  padding: 4px 8px;
+  float: left;
+}
+
+div.pagination li.active {
+  background-color: #337ab7;
+  color: white;
+}
