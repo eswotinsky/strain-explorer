@@ -10,6 +10,7 @@ class Home extends Component {
     this.state = {
       strainList: [],
       isLoading: false,
+      queryURL: 'https://www.cannabisreports.com/api/v1.0/strains',
       pageCount: 1,
       currentPage: 1
     };
@@ -19,7 +20,7 @@ class Home extends Component {
 
   componentDidMount() {
     this.setState({isLoading: true});
-    axios.get(`https://www.cannabisreports.com/api/v1.0/strains`)
+    axios.get(`${this.state.queryURL}`)
       .then(response => this.setState({
         strainList: response.data.data,
         isLoading: false,
@@ -33,6 +34,7 @@ class Home extends Component {
       .then(response => this.setState({
         strainList: response.data.data,
         isLoading: false,
+        queryURL: `https://www.cannabisreports.com/api/v1.0/strains/search/${searchQuery}`,
         pageCount: response.data.meta.pagination.total_pages,
         currentPage: 1
       }))
@@ -40,7 +42,11 @@ class Home extends Component {
 
   handlePageChange(number) {
     if (number > 0 && number <= this.state.pageCount) {
-      this.setState({currentPage: number});
+      axios.get(`${this.state.queryURL}?page=${number}`)
+        .then(response => this.setState({
+          strainList: response.data.data,
+          currentPage: number
+        }))
     }
   }
 
