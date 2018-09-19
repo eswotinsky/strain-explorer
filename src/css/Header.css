@@ -1,8 +1,11 @@
 div.header {
-  flex: 0 0 auto;
   background-color: white;
   border-bottom: 1px solid lightgray;
   text-align: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 999;
 }
 
 div.header h1 {
@@ -13,4 +16,9 @@ div.header h1 {
   letter-spacing: 4px;
   line-height: 1;
   margin-bottom: 0px;
+}
+
+div.header a {
+  color: inherit;
+  text-decoration: none;
 }

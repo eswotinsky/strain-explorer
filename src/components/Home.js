@@ -3,6 +3,7 @@ import Filters from './Filters';
 import StrainList from './StrainList';
 import Pagination from './Pagination';
 import axios from 'axios';
+import '../css/Home.css';
 
 class Home extends Component {
   constructor(props) {
