@@ -2,8 +2,7 @@ div.strain-card {
   background-color: skyblue;
   float: left;
   margin: 0 6px 12px 6px;
-  max-width: 168px;
-  overflow-x: hidden;
+  width: 168px;
 }
 
 div.strain-card h5 {
