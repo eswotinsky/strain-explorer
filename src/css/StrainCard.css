@@ -1,16 +1,15 @@
 div.strain-card {
   background-color: skyblue;
-  float: left;
   margin: 0 6px 12px 6px;
   width: 168px;
+  max-height: 336px;
 }
 
 div.strain-card h5 {
-  margin-top: 5%;
+  margin-top: 10%;
   color: #111;
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: bold;
-  line-height: 1;
 }
 
 div.strain-card p {

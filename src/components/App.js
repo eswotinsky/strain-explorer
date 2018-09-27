@@ -14,7 +14,7 @@ function App() {
         <Header />
         <div className="container">
           <Switch>
-            <Route exact path="/" component={Home}/>
+            <Route exact path="/" component={Home} />
             <Route path="/details/:ucpc" component={StrainDetails} />
             <Route component={Error404} />
           </Switch>

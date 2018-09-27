@@ -1,0 +1,15 @@
+div.filters {
+  padding: 1.5%;
+  margin: 0 auto;
+}
+
+div.filters button {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+div.filters input {
+  font-family: 'Helvetica Neue', sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+}

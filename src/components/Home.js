@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Filters from './Filters';
+import SearchBar from './SearchBar';
 import StrainList from './StrainList';
 import Pagination from './Pagination';
 import axios from 'axios';
@@ -15,7 +15,7 @@ class Home extends Component {
       pageCount: 1,
       currentPage: 1
     };
-    this.handleFilterSubmission = this.handleFilterSubmission.bind(this);
+    this.handleSearchSubmission = this.handleSearchSubmission.bind(this);
     this.handlePageChange = this.handlePageChange.bind(this);
   }
 
@@ -29,7 +29,7 @@ class Home extends Component {
       }))
   }
 
-  handleFilterSubmission(searchQuery) {
+  handleSearchSubmission(searchQuery) {
     this.setState({isLoading: true});
     axios.get(`https://www.cannabisreports.com/api/v1.0/strains/search/${searchQuery}`)
       .then(response => this.setState({
@@ -79,17 +79,19 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
-        <Filters onFilterSubmission={this.handleFilterSubmission}/>
-        <StrainList
-          strainList={this.state.strainList}
-          isLoading={this.state.isLoading}
-        />
-        <Pagination
-          pageCount={this.state.pageCount}
-          visiblePages={this.findVisiblePages(this.state.pageCount, this.state.currentPage)}
-          currentPage={this.state.currentPage}
-          onPageChange={this.handlePageChange}
-        />
+        <SearchBar onSearchSubmission={this.handleSearchSubmission}/>
+        <div className="results-content">
+          <StrainList
+            strainList={this.state.strainList}
+            isLoading={this.state.isLoading}
+          />
+          <Pagination
+            pageCount={this.state.pageCount}
+            visiblePages={this.findVisiblePages(this.state.pageCount, this.state.currentPage)}
+            currentPage={this.state.currentPage}
+            onPageChange={this.handlePageChange}
+          />
+        </div>
       </div>
     );
   }

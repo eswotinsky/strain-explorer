@@ -1,9 +1,7 @@
 div.strain-list {
-  margin-left: 275px;
-  width: calc(-275px + 100%);
-  min-height: 90vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
+  grid-column-gap: 5%;
 }
 
 div.strain-list h2 {

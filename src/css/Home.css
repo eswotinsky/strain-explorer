@@ -1,3 +1,5 @@
-div.home {
-  margin-top: 6%;
+div.home div.results-content {
+  min-height: 84vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
 }

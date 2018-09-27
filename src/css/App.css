@@ -1,13 +1,7 @@
 div.wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
   background-color: whitesmoke;
 }
 
 div.container {
   text-align: center;
-  flex: 1 1 auto;
-  overflow-y: auto;
-  position: relative;
 }
